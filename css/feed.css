@@ -1,0 +1,348 @@
+:root{
+  --color-principal: #5D4E8E;
+  --color-segundario: #7B77C2;
+  --color-terciario: #B09DCE;
+  --color-logo:  #FFE600;
+  --color-letra: #ffffff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  font-family:'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+}
+body{
+  background-color: var(--color-principal);
+  color: var(--color-letra);
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--color-principal);
+}
+.nav-logo{
+  margin-left: 30px;
+  width: 150px;;
+}
+.nav-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 2px solid var(--color-principal);
+}
+.button-box{
+  width: auto;
+  height: auto;
+  background-color: var(--color-segundario);
+  border-radius: 40px;
+  padding: 5px;
+  margin-right: 30px;
+}
+.hover{
+  width: auto;
+  border-radius: 40px;
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.5);
+}
+.menu-item{
+  color: var(--color-letra);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.menu-item:hover{
+  color: var(--color-letra);
+  text-decoration: underline;
+}
+.form-control{
+  width: 400px;
+  background-color: var(--color-terciario);
+  margin-left: 15px;
+  border: none;
+  border-radius: 15px;
+}
+.form-control:focus{
+  background-color: var(--color-terciario);
+  border: 1px solid var(--color-principal);
+  overflow: none;
+  box-shadow: none;
+}
+.columna1{
+  background-color: var(--color-segundario);
+  border-radius: 50px;
+  height: 80vh;
+  position: sticky;
+  top: 76px;
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.5);
+  padding: 8px;
+}
+.img-perfil{
+  padding: 5px;
+  border-radius: 100%;
+  height: 100%;
+  width: 100%;
+ } 
+.card-feed{
+  background-color: var(--color-segundario);
+  border-radius: 150px;
+  border: none;
+}
+.style-name{
+  background: var(--color-segundario);
+  color: white;
+  padding: 5px 10px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  width: 140px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transition-delay: 0.2s;
+  text-decoration: none;
+}
+h5{
+  width: 100%;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.style-email{
+  padding: 7% 0;
+}
+.text-seg-fav{
+  width: 100%;
+  padding: 3%;
+}
+.text-style{
+  background: var(--color-segundario);
+  height: 10%;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  transition: none;
+  text-decoration: none;
+}
+.columna2{
+  background-color: var(--color-segundario);
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  padding: 8px;
+}
+.columna3{
+  background-color: var(--color-segundario);
+  border-radius: 10px;
+  height: 80vh;
+  position: sticky;
+  top: 76px;
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.5);
+  padding: 8px;
+}
+.btn-publicacion-posteo{
+  width: 100%;
+  background-color: var(--color-terciario);
+  padding: 10px;
+  margin: 2px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: var(--color-logo);
+}
+.input-publicacion{
+  width: 100%;
+  background-color: var(--color-terciario);
+  padding: 10px;
+  border-radius: 10px;
+}
+.input-text{
+  width: 85%;
+  border: none;
+  background-color: transparent;
+  color: var(--color-letra);
+  resize: none;
+}
+.input-text:focus{
+  border: none;
+  outline: none;
+}
+.img-previsualizacion{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+.input-text::placeholder{
+  color: var(--color-letra);
+}
+.file-select {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.file-select::before {
+  background-color: var(--color-segundario);
+  color: var(--color-letra);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Seleccionar Imagen';
+  position: absolute;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.file-select .input-file {
+  opacity: 0;
+  width: 200px;
+  height: 32px;
+  cursor: pointer;
+  display: block;
+}
+.btn-publicacion{
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  color: var(--color-logo);
+}
+.btn-publicacion:hover{
+  opacity: 0.7;
+}
+.text{
+  overflow-wrap: break-word;
+}
+.publicacion-nueva{
+  background-color: var(--color-terciario);
+  border-radius: 10px;
+}
+.format-text{
+  width: 99%;
+  padding: 3px 2px;
+  margin: 5px 5px 5px;
+}
+.format-nombre{
+  padding: 1px 10px 1px;
+}
+.format-img{
+  background-color: var(--color-terciario);
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.format-perfil{
+  width: 50px;
+  height: 50px;
+}
+.card-feed{
+  margin: 5px 0;
+  padding: 3px;
+}
+.pub-c{
+  border-radius: 3%;
+  width: 80%;
+  margin-top: 6px;
+}
+.format-pub{
+  border-radius: 3%;
+  width: 100%;
+  margin-top: 6px;
+}
+
+@media (max-width: 414px){
+  .resp-m-c{
+    border-radius: 3%;
+    height: 300px;
+    width: 300px;
+  }
+  .resp-m-d{
+    border-radius: 3%;
+    height: 200px;
+    width: 100%;
+  }
+  .resp-m-m{
+    border-radius: 3%;
+    height: 350px;
+    width: 100%;
+  }
+  .fp-m{
+    width: 350px;
+    height: 100%;
+  }
+}
+@media (min-width: 415px) and (max-width: 1024px){
+  .fp-t{
+    width: 370px;
+    height: 200px;
+  }
+  .resp-t-d{
+    border-radius: 3%;
+    height: 250px;
+    width: 100%;
+  }
+  .resp-t-m{
+    border-radius: 3%;
+    height: 400px;
+    width: 300px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1040px){
+  .resp-l-m{
+    border-radius: 3%;
+    height: 300px;
+    width: 200px;
+  }
+  .resp-l-d{
+    border-radius: 3%;
+    height: 300px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px){
+  .nav-logo{
+    margin-left: 15px;
+  }
+  .button-box{
+    margin-right: 15px;
+  }
+  
+}
+@media (max-width: 576px){
+  .nav-logo{
+    margin-left: 15px;
+    width: 80px;
+  }
+  .button-box{
+    margin-right: 15px;
+  }
+  .nav-img{
+    width: 35px;
+    height: 35px;
+  }
+  .menu-item{
+    font-size: 10px;
+  }
+  
+}
+
+/* CHAT */
+
+.image-perfil-chat{
+  width: 25%;
+  height: 90%;
+}
+
+.name-style-chat{
+  margin: 10px;
+  font-size: small;
+}
+
+@media (max-width: 768px){
+  .chat-info{
+    width: 170px;
+  }
+}
